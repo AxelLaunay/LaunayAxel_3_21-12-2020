@@ -85,6 +85,74 @@ background:#f0f0f0}
     }
 }
 
+@keyframes choicesIn {
+    0% {
+        top:70px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+  }
+
+  .choices__item{
+      position: relative;
+      top: 70px;
+      opacity: 0;
+  }
+
+  .choices__item.delay-0 {
+    -webkit-animation: 0.5s linear 0s choicesIn forwards;
+            animation: 0.5s linear 0s choicesIn forwards;
+  }
+  .choices__item.delay-1 {
+    -webkit-animation: 0.5s linear 0.25s choicesIn forwards;
+            animation: 0.5s linear 0.25s choicesIn forwards;
+  }
+  .choices__item.delay-2 {
+    -webkit-animation: 0.5s linear 0.5s choicesIn forwards;
+            animation: 0.5s linear 0.5s choicesIn forwards;
+  }
+  .choices__item.delay-3 {
+    -webkit-animation: 0.5s linear 0.75s choicesIn forwards;
+            animation: 0.5s linear 0.75s choicesIn forwards;
+  }
+  .choices__item.delay-4 {
+    -webkit-animation: 0.5s linear 1s choicesIn forwards;
+            animation: 0.5s linear 1s choicesIn forwards;
+  }
+  .choices__item.delay-5 {
+    -webkit-animation: 0.5s linear 1.25s choicesIn forwards;
+            animation: 0.5s linear 1.25s choicesIn forwards;
+  }
+  .choices__item.delay-6 {
+    -webkit-animation: 0.5s linear 1.5s choicesIn forwards;
+            animation: 0.5s linear 1.5s choicesIn forwards;
+  }
+  .choices__item.delay-7 {
+    -webkit-animation: 0.5s linear 1.75s choicesIn forwards;
+            animation: 0.5s linear 1.75s choicesIn forwards;
+  }
+  .choices__item.delay-8 {
+    -webkit-animation: 0.5s linear 2s choicesIn forwards;
+            animation: 0.5s linear 2s choicesIn forwards;
+  }
+  .choices__item.delay-9 {
+    -webkit-animation: 0.5s linear 2.25s choicesIn forwards;
+            animation: 0.5s linear 2.25s choicesIn forwards;
+  }
+  .choices__item.delay-10 {
+    -webkit-animation: 0.5s linear 2.5s choicesIn forwards;
+            animation: 0.5s linear 2.5s choicesIn forwards;
+  }
+  .choices__item input {
+    display: none;
+  }
+  .choices__item input:checked ~ .choices__content {
+    width: 100%;
+  }
+
 .chargement{
     background: #fff;
     position: absolute;
